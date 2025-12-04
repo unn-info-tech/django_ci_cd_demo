@@ -1,0 +1,31 @@
+/* Body styling */
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f); /* soft gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full viewport height */
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.3); /* subtle overlay for readability */
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    animation: colorShift 6s infinite alternate; /* smooth color animation */
+}
+
+/* Color animation */
+@keyframes colorShift {
+    0% { background-color: #ff6a88; }
+    50% { background-color: #ffb88c; }
+    100% { background-color: #6a11cb; }
+}
